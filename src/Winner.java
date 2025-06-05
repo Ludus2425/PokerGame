@@ -31,8 +31,6 @@ public class Winner {
                 winners.add(player);
             }
         }
-
-        // Optionally, you can log/show each player's best hand:
         for (var entry : playerBestResults.entrySet()) {
         System.out.println(entry.getKey() + ": " + entry.getValue().getName());
         }
@@ -41,7 +39,7 @@ public class Winner {
     }
 
     // Helper to generate all k-combinations of a list
-    private static <T> List<List<T>> combinations(List<T> list, int k) {
+       private static <T> List<List<T>> combinations(List<T> list, int k) {
         List<List<T>> result = new ArrayList<>();
         combineHelper(list, k, 0, new ArrayList<>(), result);
         return result;

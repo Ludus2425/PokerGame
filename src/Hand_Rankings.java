@@ -93,7 +93,7 @@ public class Hand_Rankings {
             int val = (rankToValue(rank));
             values.add(val);
             if (val == 14) {
-                values.add(1);  // Ace as low
+                values.add(1);  
             }
         }
 
